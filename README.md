@@ -20,16 +20,35 @@ Figure 1 presents a scheme with the classiﬁcation of the functions used to bui
 - Binary Fast Walsh Transforms (FWT);
 - Binary Inverse Fast Walsh Transforms (IFWT);
 - Binary Fast Mobius Transforms (FMT);
-- Bitwise binary Fast Mobius Transform (bitwise FMT)
+- Bitwise binary Fast Mobius Transform (bitwise FMT);
 - Butterfly Min-Max. 
 #### Additional algorithms and function for computing:
 - Differential Distribution Tables (DDT);
 - Linear Approximation Tables (LAT); 
 - Algebraic Normal Forms (ANF);
-- Component Function 
+- Component Function; 
 - Auxiliary function reduction for maintaining necessary operations ﬁgure 1.
 
-Included procedure in BoolSPLG compute next cryptographic properties: Wf(f) (Walsh spectra of Boolean function), Lin(f) (Linearity of Boolean function), LAT(S) (Linear Approximation Table of S-box), Lin(S) (Linearity of S-box), rf(f) (Autocorrelation Spectrum of Boolean function), AC(f) (Autocorrelation of Boolean function), ACT(S) (Autocorrelation spectrum of S-box), AC(S) (Autocorrelation of S-box), ANF(f) (Algebraic Normal Form of Boolean function), ANF(S) (Algebraic Normal Form of S-box), Deg(f) (Algebraic Degree of Boolean function), Deg(S) (Algebraic Degree of S-box), DDT(S) (Difference Distribution Table), δ (Diﬀerential uniformity) and Sb (Component function of S-box) [1]. 
+### Included procedure in BoolSPLG compute next cryptographic properties: 
+#### Boolean function
+- Walsh spectra Wf(f);
+- Linearity Lin(f);
+- Autocorrelation Spectrum rf(f);
+- Autocorrelation AC(f);
+- Algebraic Normal Form ANF(f);
+- Algebraic Degree Deg(f);
+
+
+#### Vector Boolean function(s) (S-boxes)
+- Linear Approximation Tables LAT(S);
+- Linearity Lin(S);
+- Autocorrelation spectrum ACT(S);
+- Autocorrelation AC(S);
+- Algebraic Normal Form ANF(S); 
+- Algebraic Degree Deg(S);
+- Difference Distribution Table DDT(S);
+- Differential uniformity δ;
+- Component function Sb. 
 
 ### Setup BoolSPL library?
 
