@@ -52,9 +52,9 @@ BSbox-tools is developed console application program for representation, definin
 
 [1] D. Bikov and I. Bouyukliev, BoolSPLG: A library with parallel algorithms for Boolean functions and S-boxes for GPU, preprint.
 
-[2] D. Bikov, I. Bouyukliev, Parallel Fast Walsh Transform Algorithm and its implementation with CUDA on GPUs. Cybernetics and Information Technologies. Cybernetics and Information Technologies 18, 21–43 (2018).
+[2] D. Bikov, I. Bouyukliev, Parallel Fast Walsh Transform Algorithm and its implementation with CUDA on GPUs. Cybernetics and Information Technologies. Cybernetics and Information Technologies 18, 21–43 (2018). http://www.cit.iit.bas.bg/CIT_2018/v-18-5s/04_paper.pdf
 
-[3] D. Bikov and I. Bouyukliev, Parallel Fast Mobius (Reed-Muller) Transform and its Implementation with CUDA on GPUs, Proceedings of PASCO 2017, Kaiserslautern, Germany, Germany — July 23 - 24, 2017, ISBN: 978-1-4503-5288-8 (improvement presented in this publication are implemented in current v0.2 BoolSPL library)
+[3] D. Bikov and I. Bouyukliev, Parallel Fast Mobius (Reed-Muller) Transform and its Implementation with CUDA on GPUs, Proceedings of PASCO 2017, Kaiserslautern, Germany, Germany — July 23 - 24, 2017, ISBN: 978-1-4503-5288-8 (improvement presented in this publication are implemented in v0.2 BoolSPL library) https://dlp5.acm.org/citation.cfm?id=3115941
 
 [4] D. Bikov and I. Bouyukliev, BoolSPLG: A library with parallel algorithms for Boolean functions and S-boxes for GPU, Poster session, PUMPS+AI 2018, Barcelona, Spain.
 
@@ -62,12 +62,12 @@ BSbox-tools is developed console application program for representation, definin
 
 ### Additional - Reference and Publications related to the BoolSPL library
 
-[1] I. Bouyukliev, D, Bikov, Applications of the binary representation of integers in algorithms for boolean functions, Proceedings of the Forty Fourth Spring Conference of the Union of Bulgarian Mathematicians SOK “Kamchia”, (2015), pp.161-166, ISSN: 1313-3330
+[1] I. Bouyukliev, D, Bikov, Applications of the binary representation of integers in algorithms for boolean functions, Proceedings of the Forty Fourth Spring Conference of the Union of Bulgarian Mathematicians SOK “Kamchia”, (2015), pp.161-166, ISSN: 1313-3330 https://core.ac.uk/download/pdf/149219587.pdf
 
 [2] D. Bikov, I. Bouyukliev, Walsh Transform Algorithm and its Parallel Implementation with CUDA on GPUs, Proceedings of 25 YEARS FACULTY OF MATHEMATICS AND INFORMATICS, Veliko Tarnovo, Bulgaria, (2015), pp. 29-34, ISBN: 978-619-00-0419-6
 
 [3] D. Bikov, I. Bouyukliev, A. Stojanova, Beneﬁt of Using Shared Memory in Implementation of Parallel FWT Algorithm with CUDA C on GPUs, Proceedings of 7th International Conference Information Technologies and Education Development, Zrenjanin, Serbia, (2016) pp.250-256, ISBN 978-86-7672-285-3
 
-[4] I. Bouyukliev, D. Bikov, S. Bouyuklieva, S-Boxes from Binary Quasi-Cyclic Codes, Electronic Notes in Discrete Mathematics Volume 57, (2017), pp. 67–72
+[4] I. Bouyukliev, D. Bikov, S. Bouyuklieva, S-Boxes from Binary Quasi-Cyclic Codes, Electronic Notes in Discrete Mathematics Volume 57, (2017), pp. 67–72 https://www.sciencedirect.com/science/article/abs/pii/S1571065317300124
 
-[5] D. Bikov, I. Bouyukliev, S. Bouyuklieva, Bijective S-boxes of Different Sizes Obtained from Quasi-Cyclic Codes, submitted. 
+[5] D. Bikov, I. Bouyukliev and S. Bouyuklieva, 2019. Bijective S-boxes of different sizes obtained from quasi-cyclic codes. Journal of Algebra Combinatorics Discrete Structures and Applications, 6(3), pp.123-134. http://jm.jacodesmath.com/index.php/jacodesmath/article/view/212
