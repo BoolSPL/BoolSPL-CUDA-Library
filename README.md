@@ -14,11 +14,24 @@ Figure 1 presents a scheme with the classiﬁcation of the functions used to bui
 
 ##### Figure 1. Classiﬁcation and module dependencies of the building blocks involved in the library
 
- Our library contains the following butterﬂy algorithms: binary Fast Walsh Transforms (FWT), binary Inverse Fast Walsh Transforms (IFWT), binary Fast Mobius Transforms (FMT), Bitwise binary Fast Mobius Transform (bitwise FMT) and butterfly Min-Max. There are additional algorithms and function for computing DDT, algebraic normal form, component function and auxiliary function reduction for maintaining necessary operations ﬁgure 1.
+### Functionalities
+
+#### Our library contains the following butterﬂy algorithms: 
+- Binary Fast Walsh Transforms (FWT);
+- Binary Inverse Fast Walsh Transforms (IFWT);
+- Binary Fast Mobius Transforms (FMT);
+- Bitwise binary Fast Mobius Transform (bitwise FMT)
+- Butterfly Min-Max. 
+#### Additional algorithms and function for computing:
+- Differential Distribution Tables (DDT);
+- Linear Approximation Tables (LAT); 
+- Algebraic Normal Forms (ANF);
+- Component Function 
+- Auxiliary function reduction for maintaining necessary operations ﬁgure 1.
 
 Included procedure in BoolSPLG compute next cryptographic properties: Wf(f) (Walsh spectra of Boolean function), Lin(f) (Linearity of Boolean function), LAT(S) (Linear Approximation Table of S-box), Lin(S) (Linearity of S-box), rf(f) (Autocorrelation Spectrum of Boolean function), AC(f) (Autocorrelation of Boolean function), ACT(S) (Autocorrelation spectrum of S-box), AC(S) (Autocorrelation of S-box), ANF(f) (Algebraic Normal Form of Boolean function), ANF(S) (Algebraic Normal Form of S-box), Deg(f) (Algebraic Degree of Boolean function), Deg(S) (Algebraic Degree of S-box), DDT(S) (Difference Distribution Table), δ (Diﬀerential uniformity) and Sb (Component function of S-box) [1]. 
 
-### How do I get started using BoolSPL?
+### Setup BoolSPL library?
 
 BoolSPL is implemented as a C++ header library. There is no need to “build” BoolSPL separately. To use BoolSPL primitives in your code, simply:
 
