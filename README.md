@@ -1,6 +1,6 @@
 # BoolSPL: A library with parallel algorithms for Boolean functions and S-boxes for GPU
 
-BoolSPL is open source project for study Boolean and Vector Boolean function(s) (S-boxes) 
+BoolSPL is open source project for study Boolean and Vector Boolean function(s) (S-boxes). 
 
 #### Current release: v0.2
 
@@ -80,7 +80,7 @@ BoolSPL distribution directory contain “examples” directory with examples (B
 
 ### BSbox-tools: console application program
 
-BSbox-tools is developed console application program for representation, defining and computing the most important cryptographic properties of Boolean and Vector Boolean functions (S-boxes). With other words BSbox-tools represents a console interface program on the BoolSPL library. The version BSbox-tools_v0.2 is based on BoolSPL_v0.2 library version. Availaible on: <a href="http://www.moi.math.bas.bg/moiuser/~data/Results/Crypto/BSbox-tools.html">Link</a>
+BSbox-tools is developed console application program for representation, defining and computing the most important cryptographic properties of Boolean and Vector Boolean functions (S-boxes). With other words BSbox-tools represents a console interface program on the BoolSPL library. The version BSbox-tools_v0.2 is based on BoolSPL_v0.2 library version. Availaible on: Official <a href="http://www.moi.math.bas.bg/moiuser/~data/Results/Crypto/BSbox-tools.html">Link</a>, GitHub <a href="https://github.com/BoolSPL/BSbox-tools">Link</a>
 
 ### Reference and Publications related to the BoolSPL library
 
