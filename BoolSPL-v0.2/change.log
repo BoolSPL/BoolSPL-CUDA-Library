@@ -1,0 +1,78 @@
+BoolSPL v0.2 new features and bug-fixes:
+
+Except for the existing functions and procedures are added additional and better versions.
+
+1.  Included additional host functions.
+2.  Included additional device functions.
+3.  Included additional procedures.
+
+Included host functions:
+
+//Declaration for CUDA Properties function
+1. void BoolSPLGCheckProperties_v1(); //v0.2
+2. void bandwidthTest(const unsigned int bytes, int nElements); //v0.2
+
+//Function: Set GRID
+3. inline void setgridBitwise(int size); //0.2
+
+//Function: Check array size
+4. inline void CheckSizeSbox(int size); //v0.2
+5. inline void CheckSizeBoolBitwise(int size); //v0.2
+6. inline void CheckSizeSboxBitwise(int size); //v0.2
+7. inline void CheckSizeSboxBitwiseMobius(int size); //v0.2
+
+//Function: CPU set TT in 64 bit int variables and vise versa
+8. void BinVecToDec(int size, int *Bin_Vec, unsigned long long int *NumIntVec, int NumInt); //v0.2
+9. void DecVecToBin(int NumOfBits, int *Bin_Vec, unsigned long long int *NumIntVec, int NumInt); //v0.2
+
+Included device functions:
+
+//Declaration for Boolean GPU device functions
+
+//GPU Bitwise Fast Mobius Transform
+1. extern __global__ void fmt_bitwise_kernel_shfl_xor_SM(unsigned long long int *vect, unsigned long long int *vect_out, int sizefor, int sizefor1); //v0.2
+2. extern __global__ void fmt_bitwise_kernel_shfl_xor_SM_MP(unsigned long long int * VectorValue, int fsize, int fsize1); //v0.2
+
+//GPU compute Algebraic Degree
+3. extern __global__ void kernel_bitwise_AD(unsigned long long int *NumIntVec, int *Vec_max_values, int NumOfBits); //v0.2
+
+//GPU Min-Max Butterfly
+4. extern __global__ void Butterfly_max_min_kernel_shfl_xor_SM(int *VectorValue, int *VectorValueRez, int step); //v0.2
+5. extern __global__ void Butterfly_max_min_kernel_shfl_xor_SM_MP(int * VectorValue, int fsize, int fsize1); //v0.2
+
+//Declaration for S-box GPU device functions
+
+//GPU Bitwise Fast Mobius Transform
+6. extern __global__ void fmt_bitwise_kernel_shfl_xor_SM_Sbox(unsigned long long int *vect, unsigned long long int *vect_out, int sizefor, int sizefor1); //v0.2
+
+//GPU compute Algebraic Degree
+7. extern __global__ void kernel_bitwise_AD_Sbox(unsigned long long int *NumIntVecANF, int *max_values, int NumOfBits); //v0.2
+
+Included procedures:
+
+//Declaration for Boolean procedures
+1. int WalshSpecTranBoolGPU_ButterflyMax(int *device_Vect, int *device_Vect_rez, int size, bool returnMaxReduction); //v0.2 BoolFWT_compute
+2. int AlgebraicDegreeBoolGPU_ButterflyMax(int *device_Vect, int *device_Vect_rez, int size);							 //v0.2 BoolAD_compute
+3. int AutocorrelationTranBoolGPU_ButterflyMax(int *device_Vect, int *device_Vect_rez, int size, bool returnMaxReduction);  //v0.2 BoolAC_compute
+
+//Declaration for Bitwise Boolean procedures 
+4. void BitwiseMobiusTranBoolGPU(unsigned long long int *device_Vect, unsigned long long int *device_Vect_rez, int size); //v0.2 Bitwise BoolFMT_compute
+5. int BitwiseAlgebraicDegreeBoolGPU_ButterflyMax(unsigned long long int *device_Vect, unsigned long long int *device_Vect_rez, int *device_Vec_max_values, int *host_Vec_max_values, int size); //v0.2
+
+//Declaration for S-box procedures
+6. int WalshSpecTranSboxGPU_ButterflyMax(int *device_Sbox, int *device_CF, int *device_LAT, int sizeSbox, bool returnMax); //v0.2
+7. void MobiusTranSboxGPU(int *device_Sbox, int *device_CF, int *device_ANF, int sizeSbox); //v0.2
+8. int AlgebraicDegreeSboxGPU_ButterflyMax(int *device_Sbox, int *device_CF, int *device_ANF, int sizeSbox); //v0.2
+9. int AutocorrelationTranSboxGPU_ButterflyMax(int *device_Sbox, int *device_CF, int *device_ACT, int sizeSbox, bool returnMax); //v0.2
+
+10. int DDTSboxGPU_ButterflyMax(int *device_Sbox, int *device_DDT, int sizeSbox, bool returnMax); //v0.2
+
+//Declaration for Bitwise S-box procedures 
+11. void BitwiseMobiusTranSboxGPU(int *host_Sbox, int *host_Vect_CF, unsigned long long int *host_NumIntVecCF, unsigned long long int *device_NumIntVecCF, unsigned long long int *device_NumIntVecANF, int sizeSbox); //v0.2
+12. int BitwiseAlgebraicDegreeSboxGPU_ButterflyMax(int *host_Sbox, int *host_Vect_CF, int *host_max_values, unsigned long long int *host_NumIntVecCF, unsigned long long int *device_NumIntVecCF, unsigned long long int *device_NumIntVecANF, int *device_Vec_max_values, int sizeSbox); //v0.2
+
+//Declaration for Max - Min Reduction function
+13. int runReductionMin(int size, int *d_idata); //v0.2
+
+//Declaration for Butterfly max function
+14. int Butterfly_max_kernel(int sizeSbox, int *device_data); //v0.2

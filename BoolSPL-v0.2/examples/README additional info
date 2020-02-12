@@ -1,0 +1,12 @@
+About BoolSPL (Boolean S-box parallel library for GPU) examples
+
+Current release on BoolSPL: v0.2
+
+These examples are tested on computer configuration with:
+		
+		Windows 10 Pro;
+		Visual Studio 2013 (version 12.0);
+		CUDA 10.0 (Nvidia GPU).
+
+In order to run some of the examples you need to import into your project additional header files. 
+Additional header files directory “help and additional header files”.
