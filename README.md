@@ -2,6 +2,8 @@
 
 BoolSPL is open source project for study S-boxes 
 
+#### Current release: v0.2
+
 ### What is BoolSPL?
 BoolSPL (Boolean S-box parallel library for GPU) provides, reusable software components for every layer of the CUDA programming model [5]. BoolSPLG is a library consisting procedures for analysis and compute cryptographic properties of Boolean and Vector Boolean function (S-box). Our procedures have function for auto grid conﬁguration. Most of the functions are designed to compute the data in registers because they oﬀer the highest bandwidth. 
 
@@ -29,7 +31,7 @@ Figure 1 presents a scheme with the classiﬁcation of the functions used to bui
 - Component Function; 
 - Auxiliary function reduction for maintaining necessary operations ﬁgure 1.
 
-### Included procedure in BoolSPLG compute next cryptographic properties: 
+### Evaluation (cryptographic properties): 
 #### Boolean function
 - Walsh spectra Wf(f);
 - Linearity Lin(f);
@@ -103,3 +105,5 @@ BSbox-tools is developed console application program for representation, definin
 [4] I. Bouyukliev, D. Bikov, S. Bouyuklieva, S-Boxes from Binary Quasi-Cyclic Codes, Electronic Notes in Discrete Mathematics Volume 57, (2017), pp. 67–72 https://www.sciencedirect.com/science/article/abs/pii/S1571065317300124
 
 [5] D. Bikov, I. Bouyukliev and S. Bouyuklieva, 2019. Bijective S-boxes of different sizes obtained from quasi-cyclic codes. Journal of Algebra Combinatorics Discrete Structures and Applications, 6(3), pp.123-134. http://jm.jacodesmath.com/index.php/jacodesmath/article/view/212
+
+#### If you have any questions or comments, please do not hesitate to email at dusan.bikov@ugd.edu.mk or iliyab@math.bas.bg
