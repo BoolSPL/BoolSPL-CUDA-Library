@@ -1,6 +1,6 @@
 # BoolSPL: A library with parallel algorithms for Boolean functions and S-boxes for GPU
 
-BoolSPL is open source project for study S-boxes 
+BoolSPL is open source project for study Boolean and Vector Boolean function(s) (S-boxes) 
 
 #### Current release: v0.2
 
